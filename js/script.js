@@ -95,7 +95,7 @@
 // // 문자와 숫자 결합을 먼저 하면 문자 타입으로 나오지만 숫자 타입의 연산을 먼저 쓰면 계산이 되어 출력된다.
 // console.log(t2 + t3 + t1);
 let myNum = 1;
-const totalNum = 5;
+const totalNum = 3;
 
 function numberSetting() {
     document.getElementById("number").innerText = myNum;
@@ -112,6 +112,9 @@ document.getElementById("btn_prev").onclick = function() {
     }
 
     numberSetting();
+
+    document.getElementById("pic").style.border = "3px solid #00eb7d";
+    document.getElementById("pic").style.left = "-500px";
 }
 
 document.getElementById("btn_next").onclick = function() {
@@ -125,6 +128,6 @@ document.getElementById("btn_next").onclick = function() {
 
     numberSetting();
 
-    document.getElementById("pic").style.border = "3px solid #00f";
+    document.getElementById("pic").style.border = "3px solid #6723ef";
     document.getElementById("pic").style.left = "500px";
 }
