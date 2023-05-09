@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta property="og:title" content="The First" />
+    <meta property="og:url" content="http://mrrobot.dothome.co.kr/" />
+    <meta property="og:image" content="http://mrrobot.dothome.co.kr//images/thum.jpg" />
+    <meta property="og:description" content="22061022 김윤아의 중간평가 페이지" />
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="The First" />
+    <meta name="twitter:url" content="http://mrrobot.dothome.co.kr/" />
+    <meta name="twitter:image" content="http://mrrobot.dothome.co.kr/images/thum.jpg" />
+    <meta name="twitter:description" content="22061022 김윤아의 중간평가 페이지" />
+
+    <meta name="description" content="22061022 김윤아의 중간평가 페이지">
+    <meta name='keywords' content='JS, Java Script, 프로그래밍, 계원예대, 실습' />
+    <!-- 전화번호 형태 링크 걸리지 않게 설정하는 meta태그 -->
+    <!-- <meta name="format-detection" content="telephone=no"> -->
+
+    <link rel="icon" href="./images/favicon_icon.ico" sizes="32x32" />
+    <link rel="apple-touch-icon" href="./images/favicon_180.ico" sizes="180x180" />
+
+    <link rel='stylesheet' type='text/css' href='./css/reset.css' />
+    <link rel='stylesheet' type='text/css' href='./css/common.css' />
+    <link rel="stylesheet" type="text/css" href="css/slick.css" />
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css" />
+    <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+    <script src="./js/common.js"></script>
+
+    <title>The First</title>
+</head>
+
+<body class="wrap">
+
+    <div class="cursor"></div>
+    <div class="cursor_follower"></div>
+
+    <header>
+        <nav class="inner">
+            <h1><a href="#"><span class="blind">사이트명</span></a></h1>
+            <ul id="gnb">
+                <li><a href="#">Intro</a></li>
+                <li><a href="#">Clock</a></li>
+                <li><a href="#">Slide</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <button id="menu" class="menu-trigger type7 ">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+        </nav>
+    </header>
+
+    <aside>
+        <div id="layerbox" class="layerpop">
+            <article class="layerpop_area">
+                <div class="title">Check Out</div>
+                <span class="layerpop_close" id="layerbox_close"></span> <br>
+                <div class="content">
+                    <img src="./images/img_walTell.jpg" alt="new album cover" id="popImg">
+                    New Album is released!<br />
+                    Wallows - Tell Me That It's Over<br />
+                </div>
+            </article>
+        </div>
+    </aside>
+
+    <section id="section1" class="inner">
+        <h2 class="blind">페이지의 소개</h2>
+        <p class="blind">섹션1에 대한 부가설명이 들어갑니다.</p>
+        <article>
+            <p>Hello, I'm YoonA</p>
+            <p id="txt">coding, develop, pratice, work</p>
+            <div id="emo"></div><br>
+            <div class="theme-switch">
+                <input type="checkbox" id="switch" />
+                <label class="toggle-icons" for="switch">
+                    <img class="moon" src="./images/dark.png" />
+                    <img class="sun" src="./images/light.png" />
+                </label>
+            </div>
+
+        </article>
+    </section>
+
+    <section id="clockSec" class="inner">
+        <h2>아날로그 실시간 시계</h2>
+        <p id="dgClock">
+            <span id="text1"></span>
+            <span id="text2"></span>
+        </p>
+    </section>
+
+    <section id="section3" class="inner">
+        <h2>slick 이미지 슬라이드</h2>
+        <p>Fav Album - Cover Images</p>
+        <div class="imgWrap">
+            <div class="slick_gallery">
+                <div class="n_box box"><img src="./images/img_cas2.jpg" alt="cigarette after sex1"></div>
+                <div class="n_box box"><img src="./images/img_amWhat.jpg" alt="arctic monkeys"></div>
+                <div class="n_box box"><img src="./images/img_wal.jpg" alt="wallows1"></div>
+                <div class="n_box box"><img src="./images/img_cas.jpg" alt="cigarette after sex2"></div>
+                <div class="n_box box"><img src="./images/img_mel.jpg" alt="lorde"></div>
+                <div class="n_box box"><img src="./images/img_top.jpg" alt="twenty one pilots"></div>
+                <div class="n_box box"><img src="./images/img_wal2.jpg" alt="wallows2"></div>
+                <div class="n_box box"><img src="./images/img_walTell.jpg" alt="wallows3"></div>
+                <div class="n_box box"><img src="./images/img_mcr.jpg" alt="mu chemical romance"></div>
+            </div>
+        </div>
+
+    </section>
+
+    <footer>
+        <div id="scrollTop"><span class="blind">맨 위로 가기</span><span class="topTxt">Top</span></div>
+        <h2 class="blind">사이트로고</h2>
+        <address class="inner">
+            <p>
+                상호명. ABCD | 대표. 홍길동<br>
+                16038 경기도 의왕시 계원대학로 66(내손동)<br>
+                Tel. <a href="tel:070-1234-1234">070-1234-1234</a><br>
+                Mail. <a href="mailto:mrrobot@kaywon.ac.kr">mrrobot@kaywon.ac.kr</a><br>
+                Fax. 070-1234-1234</a>
+            </p>
+            <p>Copyright ⓒ 2022 YoonA All rights reserved.</p>
+            <ul id="foot_snsSet">
+                <li><a href="#" target="_blank"><span class="blind">깃허브</span></a></li>
+                <li><a href="#" target="_blank"><span class="blind">유튜브</span></a></li>
+                <li><a href="#" target="_blank"><span class="blind">페이스북</span></a></li>
+                <li><a href="#" target="_blank"><span class="blind">트위터</span></a></li>
+            </ul>
+        </address>
+    </footer>
+</body>
+
+</html>
