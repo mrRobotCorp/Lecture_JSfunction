@@ -1,0 +1,97 @@
+body {
+    user-select: none;
+    background-color: #eff8ff;
+}
+@font-face {
+    font-family: "digital";
+    src: url(../javaScript/source/DS-DIGIB.TTF);
+    font-style: normal;
+}
+h1 {
+    color: #3C3E40;
+    font-family:'Times New Roman';
+    font-size: 18px;
+    border-bottom: 1px solid #3C3E40;
+    margin: 20px 50px;
+    padding: 10px;
+}
+#clock {
+    width: 350px;
+    height: 350px;
+    position: relative;
+    top: 80px;
+    left: 400px;
+    align-items: center;
+    background: url(../javaScript/source/clockBg.png);
+    background-size: cover;
+    border: 1px solid #eff8ff;
+    border-radius: 50%;
+    box-shadow: 0px -10px 20px #d0dde6, inset 0 -10px 20px #d0dde6,
+                0 0 0 #eff8ff, inset 0 0 0 #eff8ff;
+}
+#clock::before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    inset: 170px 168px;
+    background-color: #000;
+    border-radius: 50%;
+    z-index: 6;
+}
+#clock #hour {
+    background-color: #023e6c;
+    border-radius: 3px;
+    position: absolute;
+    top: 99px;
+    left: 172px;
+    width: 8px;
+    height: 75px;
+    z-index: 3;
+    transform-origin: 0 100%;
+}
+#clock #min {
+    background-color: #023e6c;
+    border-radius: 3px;
+    position: absolute;
+    top: 63px;
+    left: 174px;
+    width: 5px;
+    height: 115px;
+    z-index: 2;
+    transform-origin: 0 100%;
+}
+#clock #sec {
+    background-color: #e9be00;
+    border-radius: 3px;
+    position: absolute;
+    top: 35px;
+    left: 175px;
+    width: 2px;
+    height: 140px;
+    z-index: 4;
+    transform-origin: 0 100%;
+}
+.blind {
+    display: none;
+}
+p {
+    text-align: center;
+    line-height: 50px;
+    float: right;
+    margin: 190px 400px 120px 0px ;
+}
+#text1 {
+    display: block;
+    font-family:Calibri;
+    font-weight: bold;
+    color: #3C3E40;
+}
+#text2 {
+    font-size: 40px;
+    font-family: digital;
+    color: #fff;
+    background-image: linear-gradient(130deg, #bc1888, #e43558, #e96900, #f6be16 );
+    border-radius: 25px;
+    padding: 13px 23px;
+}
