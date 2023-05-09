@@ -1,0 +1,21 @@
+* {margin: 0; padding: 0; text-align: center;}
+
+#section1 #imgSet { position: relative; border: 5px solid #f05919; width: 1440px; height: 540px; margin: 0 auto;}
+#section1 #imgSet #picSet { width: 1440px; height: 540px; position: relative; overflow: hidden;}
+#section1 #imgSet #picSet img { position: absolute; top:0; left:0; transition: left 1s;}
+#section1 #imgSet #picSet dl { position: absolute; z-index: 1; bottom: -100px; left: 0; background-color: rgba(209, 56, 0, 0.402); color: #fff; width: 100%; padding: 20px;}
+#section1 #imgSet #picSet dl.active { animation: textMotionIn forwards 1s;}
+#section1 #imgSet #picSet dl.activeOut { animation: textMotionOut forwards 1s}
+
+@keyframes textMotionIn { from { bottom: -100px; opacity: 0;} to { bottom: 0;}}
+@keyframes textMotionOut { from { bottom: 0; opacity: 1;} to { bottom: 20px; opacity: 0;}}
+
+#section1 #imgSet button {position: absolute; top: 50%; margin-top: -40px; width: 80px; height: 80px; background-color: #000; color: #fff; border-radius: 50%; cursor: pointer;}
+#section1 #imgSet button:hover { background-color: #666; border: none;}
+#section1 #imgSet #prev_btn { left: -110px;}
+#section1 #imgSet #next_btn { right: -110px;}
+
+#section1 #dotList { margin-top: 20px;}
+#section1 #dotList li { margin: 0 20px; display: inline-block; background-color: #000; color: #fff; width: 20px; height: 20px; border-radius: 50%; cursor: pointer; }
+#section1 #dotList li:hover { background-color: #666;}
+#section1 #dotList li.active { background-color: #f05919;}
